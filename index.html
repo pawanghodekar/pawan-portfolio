@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Ghodekar | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio of Pawan Ghodekar - Information Technology Engineer, Google Cloud Specialist, & Data Science Practitioner.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for fallback icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glows -->
+    <div class="glow-bg glow-primary"></div>
+    <div class="glow-bg glow-secondary"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>Pawan<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#credentials">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <button class="menu-toggle btn-icon" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu-backdrop"></div>
+    <aside class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="logo"><span class="logo-bracket">&lt;</span>Pawan<span class="logo-bracket">/&gt;</span></span>
+            <button class="close-menu btn-icon"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#credentials">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="status-dot"></span> Available for Freelance & Cloud Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Pawan Ghodekar</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span class="role-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A passionate Information Technology Engineer specializing in Google Cloud architectures, data-driven machine learning solutions, and crafting premium, responsive web experiences.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pawan-ghodekar/" target="_blank" class="social-item" title="LinkedIn" id="link-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.kaggle.com/pawanghodekar" target="_blank" class="social-item" title="Kaggle" id="link-kaggle">
+                            <i class="fa-brands fa-kaggle"></i>
+                        </a>
+                        <a href="https://cloudskillsboost.google" target="_blank" class="social-item" title="Google Cloud Skills Boost" id="link-gcp">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="https://www.freelancer.com" target="_blank" class="social-item" title="Freelancer Profile" id="link-freelancer">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Premium Dynamic Graphic Container -->
+                <div class="hero-visual">
+                    <div class="visual-card-wrapper">
+                        <div class="visual-blob"></div>
+                        <div class="glass-panel main-panel">
+                            <div class="panel-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="panel-title">pawan.sys</span>
+                            </div>
+                            <div class="panel-body">
+                                <p class="code-line"><span class="c-keyword">import</span> cloud, ml, web</p>
+                                <p class="code-line"><span class="c-comment"># Initializing professional profile</span></p>
+                                <p class="code-line">pawan = IT_Engineer(</p>
+                                <p class="code-line-ind">edu=<span class="c-str">"S.P. Pune University"</span>,</p>
+                                <p class="code-line-ind">major=<span class="c-str">"Information Technology"</span>,</p>
+                                <p class="code-line-ind">skills=[<span class="c-str">"GCP"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"DevOps"</span>]</p>
+                                <p class="code-line">)</p>
+                                <p class="code-line"><span class="c-keyword">print</span>(pawan.get_status())</p>
+                                <p class="code-line-out">&gt;&gt;&gt; "Ready to innovate & architect solutions."</p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Floating Cards for rich visual styling -->
+                        <div class="floating-badge badge-1">
+                            <div class="badge-icon"><i class="fa-brands fa-google-cloud"></i></div>
+                            <div>
+                                <div class="badge-title">Google Cloud</div>
+                                <div class="badge-subtitle">Certified Essentials</div>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-2">
+                            <div class="badge-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <div class="badge-title">Data Science</div>
+                                <div class="badge-subtitle">Kaggle Contributor</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Bridging academic excellence with practical engineering expertise</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel text-content">
+                        <h3>My Story</h3>
+                        <p>
+                            I hold a <strong>Bachelor of Engineering in Information Technology</strong> from <strong>Savitribai Phule Pune University</strong>. This rigorous academic program laid a solid foundation in software systems, database designs, networks, and advanced programming methodologies.
+                        </p>
+                        <p>
+                            Driven by a curiosity for scalable technologies, I expanded my focus into **Cloud Architectures (GCP)** and **Machine Learning/Data Science (Python & Kaggle)**. I thrive in design environments where data analysis meets automated systems, building robust backend architectures and highly intuitive, fast frontend user interfaces.
+                        </p>
+                        <div class="stats-counter">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="92">0</span><span class="stat-suffix">%</span>
+                                <span class="stat-label">Cloud Automations</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">ML Kernels</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cards-subgrid">
+                        <div class="subcard glass-panel">
+                            <div class="subcard-icon color-1"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                            <h4>Cloud Architectures</h4>
+                            <p>Provisioning secure, cost-efficient, and auto-scaling cloud deployments using GCP, Docker, and DevOps pipelines.</p>
+                        </div>
+                        <div class="subcard glass-panel">
+                            <div class="subcard-icon color-2"><i class="fa-solid fa-chart-line"></i></div>
+                            <h4>Data & Analytics</h4>
+                            <p>Designing custom machine learning predictions, analyzing complex datasets, and presenting actionable web insights.</p>
+                        </div>
+                        <div class="subcard glass-panel">
+                            <div class="subcard-icon color-3"><i class="fa-solid fa-code"></i></div>
+                            <h4>Software Engineering</h4>
+                            <p>Developing high-fidelity frontend systems with custom CSS styling, dynamic scripting, and fluid mobile responsiveness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Proficiencies and core technologies in my engineering toolbox</p>
+                </div>
+
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-category="all">All Skills</button>
+                    <button class="tab-btn" data-category="cloud">Cloud & DevOps</button>
+                    <button class="tab-btn" data-category="ml">Data & ML</button>
+                    <button class="tab-btn" data-category="web">Web & Software</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- GCP -->
+                    <div class="skill-card glass-panel" data-category="cloud">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-google-cloud skill-icon color-1"></i>
+                            <span class="skill-name">Google Cloud Platform</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- DevOps -->
+                    <div class="skill-card glass-panel" data-category="cloud">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-infinity skill-icon color-1"></i>
+                            <span class="skill-name">DevOps & CI/CD</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Docker -->
+                    <div class="skill-card glass-panel" data-category="cloud">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-docker skill-icon color-1"></i>
+                            <span class="skill-name">Docker Containers</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="skill-card glass-panel" data-category="cloud">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-github skill-icon color-1"></i>
+                            <span class="skill-name">Git & Version Control</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card glass-panel" data-category="ml">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-python skill-icon color-2"></i>
+                            <span class="skill-name">Python Programming</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- ML Frameworks -->
+                    <div class="skill-card glass-panel" data-category="ml">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-microchip skill-icon color-2"></i>
+                            <span class="skill-name">Scikit-Learn & ML Models</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Data Libraries -->
+                    <div class="skill-card glass-panel" data-category="ml">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-database skill-icon color-2"></i>
+                            <span class="skill-name">Pandas, NumPy, SQL</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Kaggle notebooks -->
+                    <div class="skill-card glass-panel" data-category="ml">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-kaggle skill-icon color-2"></i>
+                            <span class="skill-name">Kaggle Data Kernels</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend (HTML/CSS) -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-css3-alt skill-icon color-3"></i>
+                            <span class="skill-name">Semantic HTML5 & CSS3 Grid</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="92%"></div>
+                        </div>
+                    </div>
+
+                    <!-- JS -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-square-js skill-icon color-3"></i>
+                            <span class="skill-name">Modern ES6+ JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Web Services -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-network-wired skill-icon color-3"></i>
+                            <span class="skill-name">RESTful APIs & Integrations</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- UX Architecture -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-wand-magic-sparkles skill-icon color-3"></i>
+                            <span class="skill-name">Responsive UI/UX Design</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications, data science kernels, and cloud pipelines</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-overlay color-1">
+                                <i class="fa-brands fa-google-cloud"></i>
+                            </div>
+                            <span class="project-tag">Cloud & DevOps</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">GCP Infrastructure & Deployment Pipeline</h3>
+                            <p class="project-desc">
+                                Engineered a complete Infrastructure-as-Code pipeline on Google Cloud Platform. Leveraged containerization via Docker and automated CD schedules to push changes seamlessly with full environment observability.
+                            </p>
+                            <div class="project-tech">
+                                <span>Google Cloud</span>
+                                <span>Docker</span>
+                                <span>CI/CD</span>
+                                <span>Shell</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="btn-project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                                <a href="#" class="btn-project-link disabled"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-overlay color-2">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+                            <span class="project-tag">Data Science</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Kaggle Predictive Model Suite</h3>
+                            <p class="project-desc">
+                                Developed a series of supervised Machine Learning classifiers and regressors using Pandas, NumPy, and Scikit-Learn. Optimized hyperparameters to achieve high accuracy metrics and exported predictions into custom dashboard views.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Scikit-Learn</span>
+                                <span>Kaggle</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.kaggle.com/pawanghodekar" target="_blank" class="btn-project-link"><i class="fa-brands fa-kaggle"></i> Kaggle Profile</a>
+                                <a href="https://github.com" target="_blank" class="btn-project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-overlay color-3">
+                                <i class="fa-solid fa-window-restore"></i>
+                            </div>
+                            <span class="project-tag">Software Engineering</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Interactive Freelancer Client Dashboard</h3>
+                            <p class="project-desc">
+                                Architected a highly responsive custom management system for clients on Freelancer. Incorporates complex multi-state layouts, modern micro-interactions, responsive graphs, and localized theme configurations.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript ES6</span>
+                                <span>Charts.js</span>
+                                <span>UX Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="btn-project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                                <a href="#" class="btn-project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials & Achievements Section -->
+        <section id="credentials" class="credentials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Credentials & Journey</h2>
+                    <p class="section-subtitle">Academic degrees, certifications, and active professional milestones</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2019 - 2023</span>
+                        <h3 class="timeline-title">Bachelor of Engineering in IT</h3>
+                        <h4 class="timeline-institution">Savitribai Phule Pune University</h4>
+                        <p class="timeline-desc">
+                            Completed formal education in Information Technology. Extensively studied Advanced DBMS, System Architectures, Networking protocols, Data Structures, and Software Development life cycles.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-title">Freelance Software & IT Engineer</h3>
+                        <h4 class="timeline-institution">Freelancer Platform</h4>
+                        <p class="timeline-desc">
+                            Providing custom frontend designs, website performance tuning, automation scripting, and backend system troubleshooting to international clients. Developed solutions prioritizing extreme performance and visual polish.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-title">Google Cloud & Machine Learning Focus</h3>
+                        <h4 class="timeline-institution">Google Skills Boost & Kaggle</h4>
+                        <p class="timeline-desc">
+                            Deepening cloud-native architecture concepts. Awarded the **Google Cloud Essentials Certificate** for completing core infrastructure tasks, while actively training predictive models on data pipelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's build something beautiful, robust, and scalable together</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Details -->
+                    <div class="contact-info-panel glass-panel">
+                        <h3>Connect Directly</h3>
+                        <p>Feel free to reach out if you have a software engineering requirement, cloud architectural needs, data analysis projects, or just want to network!</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <div class="info-label">Email</div>
+                                    <a href="mailto:pawan.ghodekar@gmail.com" class="info-value">pawan.ghodekar@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div>
+                                    <div class="info-label">Location</div>
+                                    <div class="info-value">Pune, Maharashtra, India</div>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div>
+                                    <div class="info-label">LinkedIn Profile</div>
+                                    <a href="https://www.linkedin.com/in/pawan-ghodekar/" target="_blank" class="info-value">linkedin.com/in/pawan-ghodekar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glow-decoration"></div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel glass-panel">
+                        <form id="portfolio-contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" name="name" required placeholder=" ">
+                                    <label for="contact-name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contact-email" name="email" required placeholder=" ">
+                                    <label for="contact-email">Email Address</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="contact-subject" name="subject" required placeholder=" ">
+                                <label for="contact-subject">Subject</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="contact-message">Message</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon-send"><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+
+                        <!-- Form status messages -->
+                        <div id="form-status" class="form-status-modal glass-panel">
+                            <div class="status-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for reaching out, Pawan will get back to you as soon as possible.</p>
+                            <button id="close-status-btn" class="btn btn-secondary">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Pawan Ghodekar. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/pawan-ghodekar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.kaggle.com/pawanghodekar" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+                <a href="https://cloudskillsboost.google" target="_blank"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <a href="#home" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
