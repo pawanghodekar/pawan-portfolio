@@ -229,21 +229,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     // 7. DYNAMIC PRINT-TO-RESUME PDF FALLBACK FUNCTION
     // ==========================================================================
-    const setupPrintResume = (elementId) => {
-        const btn = document.getElementById(elementId);
+    const setupPrintResume = (btn) => {
         if (btn) {
             btn.addEventListener('click', (e) => {
-                // If a real PDF hasn't been placed in workspace, trigger printing style
-                // checking if we want a direct local download or browser trigger.
-                // In production, placing custom CSS print media makes window.print() 
-                // the ultimate high-fidelity single-page PDF generator!
-                console.log("Triggering high-fidelity browser print rendering...");
+                // Prevent default navigation to the missing PDF file URL
+                e.preventDefault();
+                // Trigger native browser Save-as-PDF print dialog instantly
+                window.print();
             });
         }
     };
     
-    setupPrintResume('hero-resume-download');
-    setupPrintResume('nav-resume-download');
+    setupPrintResume(document.getElementById('hero-resume-download'));
+    setupPrintResume(document.getElementById('nav-resume-download'));
+    setupPrintResume(document.querySelector('.mobile-menu a[download]'));
 
     // ==========================================================================
     // 8. CONTACT FORM SUBMISSION HANDLER (Mock Integration)
