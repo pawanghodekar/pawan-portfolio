@@ -1589,3 +1589,225 @@ form {
         width: 100%;
     }
 }
+
+/* ==========================================================================
+   HIGH-FIDELITY PRINT RENDERING (Resume Generator Fallback)
+   ========================================================================== */
+@media print {
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+    }
+    
+    .glow-bg, .main-header, .mobile-menu, .mobile-menu-backdrop, 
+    .hero-actions, .social-links, .hero-visual, .floating-badge, 
+    .stats-counter, .skills-tabs, .btn-project-link, .glow-decoration, 
+    .contact-form-panel, .main-footer, .scroll-top {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    section {
+        padding: 15px 0 !important;
+        page-break-inside: avoid;
+    }
+    
+    .hero-section {
+        padding-top: 0 !important;
+        text-align: left !important;
+    }
+    
+    .hero-container {
+        display: block !important;
+    }
+    
+    .hero-title {
+        font-size: 22pt !important;
+        margin-bottom: 5px !important;
+        color: #000000 !important;
+    }
+    
+    .hero-title span {
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #000000 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 13pt !important;
+        min-height: auto !important;
+        margin-bottom: 8px !important;
+        color: #444444 !important;
+    }
+    
+    .hero-desc {
+        font-size: 10pt !important;
+        color: #333333 !important;
+        max-width: 100% !important;
+        margin-bottom: 12px !important;
+    }
+    
+    /* Contact Details Printing Header */
+    .contact-info-panel {
+        display: block !important;
+        border: none !important;
+        background: none !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .contact-info-panel h3 {
+        display: none !important;
+    }
+    
+    .info-list {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+    }
+    
+    .info-item {
+        display: flex !important;
+        gap: 5px !important;
+    }
+    
+    .info-icon, .info-label {
+        display: none !important;
+    }
+    
+    .info-value {
+        font-size: 9.5pt !important;
+        color: #000000 !important;
+    }
+    
+    .section-title {
+        font-size: 14pt !important;
+        margin-bottom: 8px !important;
+        page-break-after: avoid;
+    }
+    
+    .section-title::after {
+        display: none !important;
+    }
+    
+    .section-subtitle {
+        display: none !important;
+    }
+    
+    .about-grid, .skills-grid, .projects-grid, .contact-grid {
+        display: block !important;
+    }
+    
+    .glass-panel {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        padding: 0 !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .about-card.text-content {
+        padding: 0 !important;
+    }
+    
+    .about-cards-subgrid {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 15px !important;
+    }
+    
+    .subcard {
+        padding: 0 !important;
+        flex: 1;
+    }
+    
+    .subcard-icon {
+        display: none !important;
+    }
+    
+    /* Skills Printing Grid */
+    .skills-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+    
+    .skill-card {
+        padding: 0 !important;
+        width: 30% !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .skill-icon, .skill-percent, .skill-progress-bar {
+        display: none !important;
+    }
+    
+    .skill-name::before {
+        content: "• ";
+    }
+    
+    /* Projects Printing */
+    .project-card {
+        margin-bottom: 12px !important;
+        page-break-inside: avoid;
+    }
+    
+    .project-img-wrapper, .project-tag {
+        display: none !important;
+    }
+    
+    .project-info {
+        padding: 0 !important;
+    }
+    
+    .project-title {
+        font-size: 11pt !important;
+    }
+    
+    .project-desc {
+        font-size: 9.5pt !important;
+        color: #444444 !important;
+    }
+    
+    /* Timeline Experience Printing */
+    .timeline::before {
+        display: none !important;
+    }
+    
+    .timeline-item {
+        padding: 0 !important;
+        margin-bottom: 12px !important;
+        page-break-inside: avoid;
+    }
+    
+    .timeline-dot {
+        display: none !important;
+    }
+    
+    .timeline-date {
+        padding: 0 !important;
+        background: none !important;
+        color: #555555 !important;
+        font-size: 9.5pt !important;
+        font-weight: bold !important;
+    }
+    
+    .timeline-title {
+        font-size: 11pt !important;
+    }
+    
+    .timeline-institution {
+        font-size: 10pt !important;
+        font-weight: bold !important;
+    }
+}
+
