@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const roleTextContainer = document.querySelector('.role-text');
     const roles = [
         "Software Developer",
+        "React & TypeScript SDE",
         "Java & Spring Boot Specialist",
-        "React.js Frontend Engineer",
-        "Full-Stack API Architect"
+        "Prompt Engineer"
     ];
     
     let roleIdx = 0;
