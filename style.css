@@ -1485,6 +1485,12 @@ form {
     box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
 }
 
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (Media Queries)
    ========================================================================== */
@@ -1530,8 +1536,8 @@ form {
         font-size: 3rem;
     }
     
-    .nav-links {
-        display: none;
+    .nav-links, .btn-download-nav {
+        display: none !important;
     }
     
     .menu-toggle {
@@ -1546,6 +1552,10 @@ form {
         flex-direction: column;
         gap: 1.5rem;
         align-items: center;
+    }
+    
+    .projects-grid, .certifications-grid {
+        grid-template-columns: 1fr !important;
     }
     
     .form-row {
@@ -1595,6 +1605,34 @@ form {
     
     .tab-btn {
         width: 100%;
+    }
+    
+    /* Perfect horizontal overflow protection on narrow viewports */
+    .visual-card-wrapper {
+        max-width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .main-panel {
+        position: relative !important;
+        width: 100% !important;
+    }
+    
+    .floating-badge {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        animation: none !important;
+        margin-top: 10px !important;
+    }
+    
+    .visual-blob {
+        display: none !important;
     }
 }
 
