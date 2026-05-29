@@ -689,6 +689,23 @@ img {
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
 }
+/* Light-mode: code panel background + token contrast */
+[data-theme="light"] .panel-body {
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(241,245,249,0.72));
+  color: var(--text-main);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Improve code token contrast in light mode */
+[data-theme="light"] .code-line               { color: var(--text-muted); }
+[data-theme="light"] .code-line-ind           { color: var(--text-main); }
+[data-theme="light"] .c-keyword               { color: #dc2626; font-weight: 700; }
+[data-theme="light"] .c-str                   { color: #059669; }
+[data-theme="light"] .c-comment               { color: #475569; font-style: italic; }
+[data-theme="light"] .code-line-out           { color: var(--clr-teal); font-weight: 600; }
 
 .code-line {
     color: var(--text-muted);
